@@ -37,7 +37,7 @@ jobs:
         run: terraform plan -input=false -no-color -out=./plan.out
 
       - name: Upload the plan file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: plan.out
           path: ./plan.out
